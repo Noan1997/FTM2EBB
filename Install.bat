@@ -1,3 +1,3 @@
 @echo off
-py pip install pandas
+pip install pandas
 pause
