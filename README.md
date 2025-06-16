@@ -22,7 +22,7 @@ You can use the `TestTemplateStdin.txt` file as a template to load the required 
 
 - There is currently no support for FamiTracker effect conversion.
 
-- The "instrument" data used by the song must be configured within the script.
+- The "instruments" data used by the song must be configured within the script.
 
 - The `TestTemplateStdin.txt` template is valid only when `SongLoopPointOption` and `TimbreSettingsOption` are set to 0. Otherwise, the template must be modified according to the data requested by the script.
 
