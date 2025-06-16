@@ -574,7 +574,7 @@ def WriteData(output_file, TN, TR, TBlocks, SQ1T, SQ2T, TRIT, NC, CBN, NotesChan
             Current_Channel = NotesChannels[channel]
             if len(Current_Channel[block_index]) > 0:
                 output_file.write(f"{NC[channel+1]}_TRACK_0x{TN}_BLOCK_{CBN[channel][block_index]}:")
-                # Check if special data should be written
+                # Check if timbre data should be written
                 if(channel>=0 and channel<=2):
                     if block_index in TBlocks[channel]:  # Adjust this logic if necessary
                         if channel == 0 and block_index < len(SQ1T):
