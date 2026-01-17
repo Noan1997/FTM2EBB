@@ -41,9 +41,9 @@ if __name__ == '__main__':
     if(DevMode!=1):
         print("Enter the name of the FTM file (TXT format)")
     
-    ftmname = input()
+    ftmname = input().strip().replace("'", "").replace('"', "")
     
-    if not ftmname.endswith('.txt'):
+    if not ftmname.lower().endswith('.txt'):
         print("Error: The file must have the extension .txt")
     else:
         try:
@@ -59,7 +59,7 @@ if __name__ == '__main__':
             ClearScreen()
             if(DevMode!=1):
                 print("Enter the name of the song:")
-            Search_Song_name = input()
+            Search_Song_name = input().strip()
             Song_name = FindSongName(ftm, 'ROW_Number', Search_Song_name, ROWSong)
             if Song_name is not None:
                 ClearScreen()
