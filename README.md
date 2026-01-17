@@ -2,7 +2,7 @@ FTM2EBB is a script that converts songs from a .txt file exported from FamiTrack
 
 ## **Requirements** ##
 
-The **pandas** library is required to run the script. It can be installed using the `Install.bat` file.
+The **pandas** library is required to run the script. It can be installed using the `Install.bat` file for CMD/PowerShell or `Install.sh` for bash terminals.
 
 ## **Usage Methods** ##
 
@@ -29,6 +29,6 @@ You can use the `TestTemplateStdin.txt` file as a template to load the required 
 ## **Update 01/17/2026** ##
 
 - Linux compatibility was improved.
-- `rundemo.sh` was added for use in bash terminals (normally used in Linux)
+- Added `rundemo.sh` and `Install.sh` for use in Bash-based terminals, primarily for Linux users.
 
 This script was created based on the music format documentation by [Quantam](https://github.com/TheRealQuantam/RetroDocs).
