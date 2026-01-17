@@ -12,7 +12,7 @@ Execute the script and enter the song data as prompted by the script.
 
 ### **2. Redirected Input (stdin) from a .txt file:** ###
 
-Write the song data requested by the script in a separate .txt file (e.g., test.txt) and execute it via CMD as follows:
+Write the song data requested by the script in a separate .txt file (e.g., test.txt) and execute it via terminal as follows:
 
 `python ftm2ebb.py < test.txt`
 
@@ -25,5 +25,10 @@ You can use the `TestTemplateStdin.txt` file as a template to load the required 
 - The "instruments" data used by the song must be configured within the script.
 
 - The `TestTemplateStdin.txt` template is valid only when `SongLoopPointOption` and `TimbreSettingsOption` are set to 0. Otherwise, the template must be modified according to the data requested by the script.
+
+## **Update 01/17/2026** ##
+
+- Linux compatibility was improved.
+- `rundemo.sh` was added for use in bash terminals (normally used in Linux)
 
 This script was created based on the music format documentation by [Quantam](https://github.com/TheRealQuantam/RetroDocs).
