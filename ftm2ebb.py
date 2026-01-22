@@ -70,7 +70,7 @@ if __name__ == '__main__':
 
             if(DevMode!=1):
                 print("Enter the track's ID number (In EBB/Mother Game)")
-            Number_Track = input()
+            Number_Track = input().strip()
             if(DevMode!=1):
                 print("Enter the track's number rows (Famitracker rows per pattern)")
             Number_Rows = int(input())

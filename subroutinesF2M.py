@@ -125,7 +125,7 @@ def SetTrimbreConfig(Bank, NTC, NTB, CN, TimbreBlocks,  SQ1Timbres, SQ2Timbres, 
                         print('"Set the number of quarter-frames to play notes before auto-release." (TRI Channel) -Quantam\n')
                         print("Values: 00-7F")
                         print("\t NOTE: It's recommended to leave it at 0")
-                        BeforeAutoRelease = input()
+                        BeforeAutoRelease = input().strip()
                         BeforeAutoRelease = int(BeforeAutoRelease, 16)
                         if (BeforeAutoRelease >= 0 and BeforeAutoRelease <= 127):
                             ClearScreen()
@@ -140,7 +140,7 @@ def SetTrimbreConfig(Bank, NTC, NTB, CN, TimbreBlocks,  SQ1Timbres, SQ2Timbres, 
                             print('"Set auto-release time to x quarter-frames." (TRI Channel) -Quantam\n')
                             print("Values: 00-1F")
                             print("\t NOTE: It's recommended to leave it at 0")
-                            TimeAutoRelease = input()
+                            TimeAutoRelease = input().strip()
                             TimeAutoRelease = int(TimeAutoRelease, 16)
                             if (TimeAutoRelease >= 0 and TimeAutoRelease <= 31):
                                 ClearScreen()
@@ -193,7 +193,7 @@ def SetTrimbreConfig(Bank, NTC, NTB, CN, TimbreBlocks,  SQ1Timbres, SQ2Timbres, 
                 try:
                     print("Select the base volume to use in the timbre settings\n")
                     print("Values: 00-0F")
-                    VolumeTimbre = input()
+                    VolumeTimbre = input().strip()
                     DecimalVolumeTimbre = int(VolumeTimbre, 16)
                     if (DecimalVolumeTimbre >= 0 and DecimalVolumeTimbre <= 15):
                         ClearScreen()
@@ -266,7 +266,7 @@ def SetTrimbreConfig(Bank, NTC, NTB, CN, TimbreBlocks,  SQ1Timbres, SQ2Timbres, 
                         print("\t Envelope 1a @8ec7: 91919191919191919191 f0")
                         print("\t Envelope 1b @8ec3: 334566 ff")
                         print("\t Envelope 1c @8f10: 111122 ff")
-                    VolumeEnvelope = input()
+                    VolumeEnvelope = input().strip()
                     DecimalVolumeEnvelope = int(VolumeEnvelope, 16)
                     if (DecimalVolumeEnvelope >= 1 and DecimalVolumeEnvelope <= 28 or DecimalVolumeEnvelope >= 1 and DecimalVolumeEnvelope <= 30):
                         ClearScreen()
